@@ -128,7 +128,7 @@ public class CtrlJDAnadeCliente {
             }
             VehiculoDAO.getVehiculoDAO().cargarVehiculos();
         } catch (Exception ex) {
-            ex.printStackTrace();
+            //ex.printStackTrace();
             JOptionPane.showMessageDialog(vista, "error al cargar los vehiculos para añadir el cliente", "Error", JOptionPane.ERROR_MESSAGE);
         }
         limpiarCampos();
