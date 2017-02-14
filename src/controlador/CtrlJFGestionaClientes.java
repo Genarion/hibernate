@@ -86,11 +86,7 @@ public class CtrlJFGestionaClientes {
 
     public void eliminaCliente(String dni, String nombre, String direccion, int numTLF, String ciudad) {
 
-//        for(Cliente c1 : HibernateConnectionManager.hibernateConnectionManager().getClientes()){
-//            if(c1.getDni().equals(dni)){
-//                HibernateConnectionManager.hibernateConnectionManager().borrarCliente(c1);
-//            }
-//        }
+        
         try {
             for (Vehiculo v : HibernateConnectionManager.hibernateConnectionManager().getVehiculos()) {
                 if (v.getCliente() == null ? dni == null : v.getCliente().getDni().equals(dni)) {
@@ -103,6 +99,12 @@ public class CtrlJFGestionaClientes {
         } catch (Exception ex) {
             //ex.printStackTrace();
             JOptionPane.showMessageDialog(vista, "error al eliminar al cliente", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+        
+        for(Cliente c1 : HibernateConnectionManager.hibernateConnectionManager().getClientes()){
+            if(c1.getDni().equals(dni)){
+                HibernateConnectionManager.hibernateConnectionManager().borrarCliente(c1);
+            }
         }
 
         rellenaTabla();
