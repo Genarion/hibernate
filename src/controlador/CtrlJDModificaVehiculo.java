@@ -37,10 +37,10 @@ public class CtrlJDModificaVehiculo {
             }
 
             if (v.getCliente() != null) {
-                System.out.println(v.getCliente().getDni());
+                //System.out.println(v.getCliente().getDni());
                 vista.getjComboBoxDNI().setSelectedItem(v.getCliente().getDni());
             } else {
-                System.out.println(v.getCliente());
+                //System.out.println(v.getCliente());
                 vista.getjComboBoxDNI().setSelectedItem("VACIO");
             }
 
@@ -73,24 +73,24 @@ public class CtrlJDModificaVehiculo {
             }
 
             if (dni.equals("VACIO")) {
-                System.out.println("estoy en vacio");
+                //System.out.println("estoy en vacio");
                 dni = null;
                 HibernateConnectionManager.hibernateConnectionManager().modificarVehiculo(v1, new Vehiculo(numBastidor, marca, modelo, color, precioCompra, null));
             } else {
-                System.out.println("estoy en con dni");
+                //System.out.println("estoy en con dni");
                 Cliente clientePa = null;
                 for (Cliente c : HibernateConnectionManager.hibernateConnectionManager().getClientes()) {
                     if (c.getDni().equals(dni)) {
                         clientePa = c;
                     }
                 }
-                System.out.println("le asigno el client con dni " + clientePa.getDni());
+                //System.out.println("le asigno el client con dni " + clientePa.getDni());
                 HibernateConnectionManager.hibernateConnectionManager().modificarVehiculo(v1, new Vehiculo(numBastidor, marca, modelo, color, precioCompra, clientePa));
                 for (Vehiculo s : HibernateConnectionManager.hibernateConnectionManager().getVehiculos()) {
                     if(s.getCliente()!=null){
-                        System.out.println(s.getNumBastidor()+" "+s.getCliente().getDni());
+                        //System.out.println(s.getNumBastidor()+" "+s.getCliente().getDni());
                     }else{
-                        System.out.println(s.getNumBastidor()+" no tiene cliente");
+                        //System.out.println(s.getNumBastidor()+" no tiene cliente");
                     }
                 }
             }

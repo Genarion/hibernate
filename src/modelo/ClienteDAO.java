@@ -45,7 +45,7 @@ public class ClienteDAO {
     }
 
     public void actualizarCliente(Cliente client ,Cliente actualizado) throws SQLException {
-        System.out.println(client.getCiudad()+" "+actualizado.getCiudad());
+        //System.out.println(client.getCiudad()+" "+actualizado.getCiudad());
         HibernateConnectionManager.hibernateConnectionManager().modificarCliente(client, actualizado);
     }
 

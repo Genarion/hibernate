@@ -192,7 +192,7 @@ public class JDAnadeVehiculo extends javax.swing.JDialog {
             }
 
         } catch (Exception e) {
-            e.printStackTrace();
+            //e.printStackTrace();
             JOptionPane.showMessageDialog(this, "El vehiculo no ha podido ser añadido", "ERROR VEHICULO", JOptionPane.ERROR_MESSAGE);
         }
 

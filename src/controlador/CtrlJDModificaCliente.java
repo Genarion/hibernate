@@ -97,7 +97,7 @@ public class CtrlJDModificaCliente {
                 }
             }
         } catch (Exception ex) {
-            ex.printStackTrace();
+            //ex.printStackTrace();
             JOptionPane.showMessageDialog(vista, "error al cargar los vehiculos", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
@@ -117,7 +117,7 @@ public class CtrlJDModificaCliente {
                 }
             }
         } catch (Exception ex) {
-            ex.printStackTrace();
+            //ex.printStackTrace();
             JOptionPane.showMessageDialog(vista, "error al cargar los vehiculos del cliente", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }

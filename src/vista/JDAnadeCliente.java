@@ -224,7 +224,7 @@ public class JDAnadeCliente extends javax.swing.JDialog {
         try {
             controlador.Anadir();
         } catch (Exception e) {
-            e.printStackTrace();
+            //e.printStackTrace();
             JOptionPane.showMessageDialog(this, "No se ha podido añadir correctamente", "ERROR CLIENTE", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_jButtonAnadirActionPerformed

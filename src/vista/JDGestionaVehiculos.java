@@ -115,7 +115,7 @@ public class JDGestionaVehiculos extends javax.swing.JDialog {
             }
             controlador.eliminaVehiculo(nbastidor, dni);
         } catch (Exception e) {
-            e.printStackTrace();
+            //e.printStackTrace();
             JOptionPane.showMessageDialog(this, "Debe selecionar algun elemento", "Error de seleccion", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_jButtonEliminarVehiculoActionPerformed

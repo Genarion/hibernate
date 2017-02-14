@@ -101,7 +101,7 @@ public class CtrlJFGestionaClientes {
             //clienteDAO.eliminarCliente(c1);
             clienteDAO.cargarClientes();
         } catch (Exception ex) {
-            ex.printStackTrace();
+            //ex.printStackTrace();
             JOptionPane.showMessageDialog(vista, "error al eliminar al cliente", "Error", JOptionPane.ERROR_MESSAGE);
         }
 

@@ -218,7 +218,7 @@ public class JFGestionaClientes extends javax.swing.JFrame {
         try {
             controlador.gestionaVehiculosCliente(jTableClientes.getValueAt(jTableClientes.getSelectedRow(), 0).toString());
         } catch (Exception e) {
-            e.printStackTrace();
+            //e.printStackTrace();
             JOptionPane.showMessageDialog(this, "Debe selecionar algun elemento", "Error de seleccion", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_jButtonVerVehiculosActionPerformed
@@ -238,7 +238,7 @@ public class JFGestionaClientes extends javax.swing.JFrame {
             Cliente c1 = new Cliente(dni, new ArrayList<Vehiculo>(), nombre, direccion, numTLF, ciudad);
             controlador.modificaCliente(c1);
         } catch (Exception e) {
-            e.printStackTrace();
+            //e.printStackTrace();
             JOptionPane.showMessageDialog(this, "Debe selecionar algun elemento", "Error de seleccion", JOptionPane.ERROR_MESSAGE);
         }
 

@@ -16,6 +16,6 @@ import run.HibernateConnectionManager;
 public class test {
     public static void main(String[] args) {
         List<Vehiculo> lista = HibernateConnectionManager.hibernateConnectionManager().getVehiculos();
-        System.out.println(lista.get(0).getCliente().getDni());
+        //System.out.println(lista.get(0).getCliente().getDni());
     }
 }

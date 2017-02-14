@@ -28,7 +28,7 @@ public class ConexionBD {
             if (conn == null) {
                 Runtime.getRuntime().addShutdownHook(new MiShDwHook());
                 String driver = "com.mysql.jdbc.Driver";
-                String url = "jdbc:mysql://localhost/ventavehiculos";
+                String url = "jdbc:mysql://localhost/venta_vehiculos";
                 String usuario = "root";
                 String password = "";
                 Class.forName(driver);
